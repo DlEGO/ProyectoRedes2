@@ -67,7 +67,7 @@ function App() {
 
   const groupedServers = TRACE_SERVERS.reduce((acc, server) => {
     const region = server.country === 'United States' ? 'North America' :
-                  ['Costa Rica', 'Guatemala'].includes(server.country) ? 'Central America' :
+                  ['Costa Rica', 'Panama'].includes(server.country) ? 'Central America' :
                   ['Brazil', 'Argentina'].includes(server.country) ? 'South America' :
                   ['Spain'].includes(server.country) ? 'Europe' :
                   ['Australia'].includes(server.country) ? 'Oceania' :

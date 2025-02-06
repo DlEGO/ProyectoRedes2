@@ -1,10 +1,10 @@
 import axios from 'axios';
-import type { GeoLocation, TraceServer } from '../types';
+import type { GeoLocation, TraceServer, TraceResult } from '../types';
 
 const IP_API_BASE = 'http://ip-api.com/json';
 
 // Virginia trace data from real measurements
-const VIRGINIA_TRACE_DATA = [
+const NEWYORK_TRACE_DATA = [
   { hop: 1, ip: '208.91.105.1', name: '_gateway', latency: 0.294 },
   { hop: 2, ip: '100.103.63.1', name: '', latency: 0.264 },
   { hop: 3, ip: '100.103.10.6', name: '', latency: 0.865 },
@@ -29,7 +29,7 @@ export const TRACE_SERVERS: TraceServer[] = [
     location: 'New York',
     country: 'United States',
     latencyOffset: 0,
-    realData: VIRGINIA_TRACE_DATA
+    realData: NEWYORK_TRACE_DATA
   },
   {
     id: 'us-ca-sj',
@@ -50,7 +50,7 @@ export const TRACE_SERVERS: TraceServer[] = [
     id: 'pa-pty',
     name: 'Panama (Panama City)',
     location: 'Panama City',
-    country: 'Guatemala',
+    country: 'Panama',
     latencyOffset: 90
   },
   // South America
@@ -152,7 +152,7 @@ export function getServerLatency(baseLatency: number, server: TraceServer): numb
 export function simulateTrace(host: string, server: TraceServer): Promise<TraceResult[]> {
   return new Promise(async (resolve) => {
     // If we have real data for New York, use it
-    if (server.id === 'us-ny' && server.realData) {
+    if (server.realData) {
       const hops = server.realData.map(hop => ({
         hop: hop.hop,
         ip: hop.ip,
