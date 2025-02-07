@@ -1,19 +1,6 @@
-traceroute to amazon.com (205.251.242.103), 20 hops max, 60 byte packets
- 1  66.90.73.241 (66.90.73.241)  0.824 ms  0.759 ms
- 2  ae0.2504.edge1.eze2.as7195.net (200.25.50.197)  0.281 ms  0.290 ms
- 3  ae813.0.edge1.scl1.as7195.net (200.25.75.35)  20.306 ms  20.285 ms
- 4  ae7.0.edge1.lim1.as7195.net (200.25.51.242)  49.395 ms  49.397 ms
- 5  ae610.0.edge1.mia1.as7195.net (200.25.75.24)  111.732 ms  111.850 ms
- 6  ae305.0.edge1.iad1.as7195.net (200.25.51.141)  138.005 ms  138.143 ms
- 7  equinix02-iad2.amazon.com (206.126.236.35)  138.571 ms  138.566 ms
- 8  * *
- 9  * *
-10  * *
-11  * *
-12  * *
-13  * *
-14  * *
-15  * *
-16  * *
-17  * *
-18  s3-console-us-standard.console.aws.amazon.com (205.251.242.103)  137.717 ms  137.724 ms
+traceroute to cloudflare.com (104.16.132.229), 20 hops max, 60 byte packets
+ 1  66.90.73.241 (66.90.73.241)  7.446 ms  7.429 ms
+ 2  ae0.2504.edge1.eze2.as7195.net (200.25.50.197)  0.300 ms  0.307 ms
+ 3  ae812.0.edge2.eze1.as7195.net (200.25.51.56)  0.635 ms  0.647 ms
+ 4  45.68.8.181 (45.68.8.181)  1.337 ms  1.339 ms
+ 5  104.16.132.229 (104.16.132.229)  0.573 ms  0.814 ms

@@ -1,56 +1,44 @@
 [
   {
     "hop": 1,
-    "name": "140.91.224.63",
-    "ip": "(140.91.224.63)",
-    "latency": 0.246
+    "name": "140.91.224.70",
+    "ip": "(140.91.224.70)",
+    "latency": 0.252
   },
   {
     "hop": 2,
-    "name": "static-254.115.255.49.in-addr.VOCUS.net.au",
-    "ip": "(49.255.115.254)",
-    "latency": 4.258
+    "name": "twi3538911.lnk.telstra.net",
+    "ip": "(139.130.119.234)",
+    "latency": 1.116
   },
   {
     "hop": 3,
-    "name": "*",
-    "ip": "static-253.115.255.49.in-addr.VOCUS.net.au",
-    "latency": null
+    "name": "static-253.115.255.49.in-addr.VOCUS.net.au",
+    "ip": "(49.255.115.253)",
+    "latency": 1.197
   },
   {
     "hop": 5,
-    "name": "be203.lsr01.melb.vic.vocus.network",
-    "ip": "(103.1.77.78)",
-    "latency": 163.993
+    "name": "be1.bdr01.mel07.vic.vocus.network",
+    "ip": "(114.31.196.59)",
+    "latency": 1.231
   },
   {
     "hop": 6,
-    "name": "be802.lsr01.brdg.nsw.vocus.network",
-    "ip": "(103.1.76.142)",
-    "latency": 163.116
+    "name": "175-45-124-229.core.vocus.network",
+    "ip": "(175.45.124.229)",
+    "latency": 1.653
+  },
+  {
+    "hop": 7,
+    "name": "162.158.0.10",
+    "ip": "(162.158.0.10)",
+    "latency": 8.124
   },
   {
     "hop": 8,
-    "name": "be202.bdr04.sjc01.ca.us.vocus.network",
-    "ip": "(114.31.199.41)",
-    "latency": 175.156
-  },
-  {
-    "hop": 9,
-    "name": "be101.bdr04.lax01.ca.us.vocus.network",
-    "ip": "(114.31.199.39)",
-    "latency": 166.461
-  },
-  {
-    "hop": 10,
-    "name": "equinix01-chi2.amazon.com",
-    "ip": "(208.115.136.98)",
-    "latency": 206.109
-  },
-  {
-    "hop": 12,
-    "name": "52.95.62.31",
-    "ip": "(52.95.62.31)",
-    "latency": 204.178
+    "name": "104.16.132.229",
+    "ip": "(104.16.132.229)",
+    "latency": 1.195
   }
 ]

@@ -53,7 +53,7 @@ function App() {
 
     } catch (error) {
         console.error('Error during trace:', error);
-        
+
         const results = await Promise.all(TRACE_SERVERS.map(server => simulateTraceFromServer(target, server)));
         console.log(results);
         setTraceResults(results);
@@ -63,20 +63,52 @@ function App() {
     }
 };
 
-  const exportData = () => {
+ const exportData = () => {
     if (!traceResults.length) return;
     
-    const csv = traceResults.flatMap(result => {
-      const serverInfo = `\nTrace from ${result.sourceServer.name}\n`;
-      const headers = ['Hop', 'IP/Router Name', 'IP(IPV4)', 'Average Latency (ms)'].join(',');
-      const rows = result.hops.map(hop => {
-        const routerName = hop.provider !== `${result.sourceServer.country} ISP` ? hop.provider : '';
-        const identifier = routerName || '*';
-        return [hop.hop, identifier, hop.ip || '*', hop.latency?.toFixed(3) || '*'].join(',');
-      });
-      return [serverInfo, headers, ...rows];
-    }).join('\n');
-
+    const csvData = traceResults.flatMap(result => {
+        const serverInfo = `\nTrace from ${result.sourceServer.name}\n`;
+        const headers = ['Hop', 'IP/Router Name', 'IP(IPV4)', 'Average Latency (ms)'].join(',');
+        const rows = result.hops.map(hop => {
+            const routerName = hop.provider !== `${result.sourceServer.country} ISP` ? hop.provider : '';
+            const identifier = routerName || '*';
+            return [hop.hop, identifier, hop.ip || '*', hop.latency?.toFixed(3) || '*'].join(',');
+        });
+        return [serverInfo, headers, ...rows];
+    });
+    
+    // Extraer todas las latencias y filtrar valores válidos
+    const allLatencies = traceResults.flatMap(result => result.hops.map(hop => hop.latency)).filter(latency => latency !== undefined);
+    const avgLatency = allLatencies.length ? (allLatencies.reduce((sum, val) => (sum ?? 0) + (val ?? 0), 0) / allLatencies.length).toFixed(3) : '*';
+    
+    // Obtener el IP con mayor y menor latencia
+    const maxLatencyHop = traceResults.flatMap(result => result.hops).reduce((max, hop) => (hop.latency && hop.latency > (max.latency || 0) ? hop : max), { hop: 0, ip: '', latency: 0, provider: '' });
+    const minLatencyHop = traceResults.flatMap(result => result.hops).reduce((min, hop) => (hop.latency !== undefined && hop.latency < (min.latency ?? Infinity) ? hop : min), { hop: 0, ip: '', latency: Infinity, provider: '' });
+    
+    // Obtener el sitio/IP con mayor y menor número de saltos
+    const maxHopsResult = traceResults.reduce((max, result) => (result.hops.length > (max.hops?.length || 0) ? result : max), {
+        target: '',
+        timestamp: '',
+        sourceServer: { id: '', name: '', location: '', country: '', latencyOffset: 0 },
+        hops: []
+    } as TraceData);
+    const minHopsResult = traceResults.reduce((min, result) => (result.hops.length < (min.hops?.length || Infinity) ? result : min), {
+        target: '',
+        timestamp: '',
+        sourceServer: { id: '', name: '', location: '', country: '', latencyOffset: 0 },
+        hops: []
+    } as TraceData);
+    
+    // Agregar las estadísticas al CSV
+    csvData.push('\nStatistics');
+    csvData.push(`Average Latency (ms),${avgLatency}`);
+    csvData.push(`IP with Max Latency,${maxLatencyHop.ip || '*'},${maxLatencyHop.latency?.toFixed(3) || '*'}`);
+    csvData.push(`IP with Min Latency,${minLatencyHop.ip || '*'},${minLatencyHop.latency?.toFixed(3) || '*'}`);
+    csvData.push(`Site/IP with Max Hops,${maxHopsResult.target || '*'},${maxHopsResult.hops?.length || '*'}`);
+    csvData.push(`Site/IP with Min Hops,${minHopsResult.target || '*'},${minHopsResult.hops?.length || '*'}`);
+    
+    const csv = csvData.join('\n');
+    
     const blob = new Blob([csv], { type: 'text/csv' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
@@ -84,7 +116,7 @@ function App() {
     a.download = `trace-${traceResults[0].target}-${new Date().toISOString()}.csv`;
     a.click();
     URL.revokeObjectURL(url);
-  };
+};
 
   const groupedServers = TRACE_SERVERS.reduce((acc, server) => {
     const region = server.country === 'United States' ? 'North America' :

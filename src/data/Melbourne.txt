@@ -1,21 +1,9 @@
-traceroute to amazon.com (205.251.242.103), 20 hops max, 60 byte packets
- 1  140.91.224.63 (140.91.224.63)  0.246 ms  0.229 ms
- 2  static-254.115.255.49.in-addr.VOCUS.net.au (49.255.115.254)  4.258 ms  4.303 ms
- 3  * static-253.115.255.49.in-addr.VOCUS.net.au (49.255.115.253)  1.126 ms
+traceroute to cloudflare.com (104.16.132.229), 20 hops max, 60 byte packets
+ 1  140.91.224.70 (140.91.224.70)  0.252 ms  0.124 ms
+ 2  twi3538911.lnk.telstra.net (139.130.119.234)  1.116 ms  1.009 ms
+ 3  static-253.115.255.49.in-addr.VOCUS.net.au (49.255.115.253)  1.197 ms *
  4  * *
- 5  be203.lsr01.melb.vic.vocus.network (103.1.77.78)  163.993 ms  163.991 ms
- 6  be802.lsr01.brdg.nsw.vocus.network (103.1.76.142)  163.116 ms  163.115 ms
- 7  * *
- 8  be202.bdr04.sjc01.ca.us.vocus.network (114.31.199.41)  175.156 ms  175.171 ms
- 9  be101.bdr04.lax01.ca.us.vocus.network (114.31.199.39)  166.461 ms  166.547 ms
-10  equinix01-chi2.amazon.com (208.115.136.98)  206.109 ms  206.108 ms
-11  * *
-12  52.95.62.31 (52.95.62.31)  204.178 ms  204.162 ms
-13  * *
-14  * *
-15  * *
-16  * *
-17  * *
-18  * *
-19  * *
-20  * *
+ 5  be1.bdr01.mel07.vic.vocus.network (114.31.196.59)  1.231 ms  1.466 ms
+ 6  175-45-124-229.core.vocus.network (175.45.124.229)  1.653 ms  1.629 ms
+ 7  162.158.0.10 (162.158.0.10)  8.124 ms  8.102 ms
+ 8  104.16.132.229 (104.16.132.229)  1.195 ms  1.174 ms

@@ -1,7 +1,7 @@
 export interface TraceResult {
   hop: number;
   ip: string;
-  location: string;
+  name: string;
   latency: number;
   provider: string;
 }

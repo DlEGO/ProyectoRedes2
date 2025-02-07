@@ -1,21 +1,9 @@
-traceroute to amazon.com (52.94.236.248), 20 hops max, 60 byte packets
- 1  gateway.pappascpt1.local (192.168.10.1)  0.555 ms  0.426 ms
+traceroute to cloudflare.com (104.16.133.229), 20 hops max, 60 byte packets
+ 1  gateway.pappascpt1.local (192.168.10.1)  0.594 ms  0.468 ms
  2  * *
- 3  remote-surf-fw.stormnet.co.za (196.22.226.162)  3.765 ms  3.992 ms
- 4  196.22.226.164 (196.22.226.164)  5.046 ms  5.251 ms
- 5  41.193.141.5 (41.193.141.5)  7.118 ms  7.081 ms
- 6  41.175.242.212 (41.175.242.212)  2.528 ms  2.468 ms
- 7  Hu0-0-0-14.LZA-P2-CPT.liquidtelecom.com (5.11.13.175)  2.372 ms  2.342 ms
- 8  hu-0-0-0-11.luk-p1-gsw.liquidtelecom.com (41.175.246.193)  142.589 ms  142.552 ms
- 9  luk-p1-tcy.hu0-0-0-0.liquidtelecom.com (5.11.12.143)  143.176 ms  143.114 ms
-10  193.251.152.45 (193.251.152.45)  142.653 ms  142.593 ms
-11  81.52.166.175 (81.52.166.175)  231.384 ms  231.286 ms
-12  * *
-13  * *
-14  * *
-15  * *
-16  * *
-17  * *
-18  * *
-19  * *
-20  * *
+ 3  remote-surf-fw.stormnet.co.za (196.22.226.162)  3.743 ms  4.021 ms
+ 4  196.22.226.164 (196.22.226.164)  6.041 ms  6.249 ms
+ 5  41.193.141.5 (41.193.141.5)  6.496 ms  6.459 ms
+ 6  41.193.12.180 (41.193.12.180)  1.685 ms  1.649 ms
+ 7  cloudflare.ixp.capetown (196.60.70.198)  2.482 ms  2.809 ms
+ 8  104.16.133.229 (104.16.133.229)  1.782 ms  1.747 ms

@@ -1,50 +1,38 @@
 [
   {
+    "hop": 1,
+    "name": "10.0.178.4",
+    "ip": "(10.0.178.4)",
+    "latency": 0.12
+  },
+  {
     "hop": 2,
-    "name": "100.100.200.1",
-    "ip": "(100.100.200.1)",
-    "latency": 0.984
+    "name": "unn-185-93-3-253.datapacket.com",
+    "ip": "(185.93.3.253)",
+    "latency": 0.282
   },
   {
     "hop": 3,
-    "name": "10.89.0.5",
-    "ip": "(10.89.0.5)",
-    "latency": 4.14
+    "name": "vl204.mad-itx-core-2.cdn77.com",
+    "ip": "(185.229.188.86)",
+    "latency": 0.244
   },
   {
     "hop": 4,
-    "name": "10.89.0.213",
-    "ip": "(10.89.0.213)",
-    "latency": 0.962
+    "name": "cloudflare-mad.cdn77.com",
+    "ip": "(169.150.195.203)",
+    "latency": 0.888
   },
   {
     "hop": 5,
-    "name": "mad-b4-link.ip.twelve99.net",
-    "ip": "(62.115.13.168)",
-    "latency": 0.952
+    "name": "188.114.108.59",
+    "ip": "(188.114.108.59)",
+    "latency": 15.027
   },
   {
     "hop": 6,
-    "name": "mad-b6-link.ip.twelve99.net",
-    "ip": "(62.115.136.69)",
-    "latency": 2.858
-  },
-  {
-    "hop": 7,
-    "name": "prs-bb2-link.ip.twelve99.net",
-    "ip": "(62.115.137.252)",
-    "latency": 21.677
-  },
-  {
-    "hop": 8,
-    "name": "ash-bb2-link.ip.twelve99.net",
-    "ip": "(62.115.140.107)",
-    "latency": 103.765
-  },
-  {
-    "hop": 9,
-    "name": "rest-b6-link.ip.twelve99.net",
-    "ip": "(62.115.140.209)",
-    "latency": 107.308
+    "name": "104.16.133.229",
+    "ip": "(104.16.133.229)",
+    "latency": 0.471
   }
 ]

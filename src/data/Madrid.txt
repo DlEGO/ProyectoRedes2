@@ -1,21 +1,7 @@
-traceroute to amazon.com (52.94.236.248), 20 hops max, 60 byte packets
- 1  * *
- 2  100.100.200.1 (100.100.200.1)  0.984 ms  0.981 ms
- 3  10.89.0.5 (10.89.0.5)  4.140 ms  4.135 ms
- 4  10.89.0.213 (10.89.0.213)  0.962 ms  0.959 ms
- 5  mad-b4-link.ip.twelve99.net (62.115.13.168)  0.952 ms  0.948 ms
- 6  mad-b6-link.ip.twelve99.net (62.115.136.69)  2.858 ms  2.885 ms
- 7  prs-bb2-link.ip.twelve99.net (62.115.137.252)  21.677 ms  21.801 ms
- 8  ash-bb2-link.ip.twelve99.net (62.115.140.107)  103.765 ms  103.756 ms
- 9  rest-b6-link.ip.twelve99.net (62.115.140.209)  107.308 ms  107.407 ms
-10  * *
-11  * *
-12  * *
-13  * *
-14  * *
-15  * *
-16  * *
-17  * *
-18  * *
-19  * *
-20  * *
+traceroute to cloudflare.com (104.16.133.229), 20 hops max, 60 byte packets
+ 1  10.0.178.4 (10.0.178.4)  0.120 ms  0.111 ms
+ 2  unn-185-93-3-253.datapacket.com (185.93.3.253)  0.282 ms  0.403 ms
+ 3  vl204.mad-itx-core-2.cdn77.com (185.229.188.86)  0.244 ms  0.252 ms
+ 4  cloudflare-mad.cdn77.com (169.150.195.203)  0.888 ms  0.906 ms
+ 5  188.114.108.59 (188.114.108.59)  15.027 ms  15.026 ms
+ 6  104.16.133.229 (104.16.133.229)  0.471 ms  0.393 ms

@@ -3,60 +3,42 @@
     "hop": 1,
     "name": "gateway.pappascpt1.local",
     "ip": "(192.168.10.1)",
-    "latency": 0.555
+    "latency": 0.594
   },
   {
     "hop": 3,
     "name": "remote-surf-fw.stormnet.co.za",
     "ip": "(196.22.226.162)",
-    "latency": 3.765
+    "latency": 3.743
   },
   {
     "hop": 4,
     "name": "196.22.226.164",
     "ip": "(196.22.226.164)",
-    "latency": 5.046
+    "latency": 6.041
   },
   {
     "hop": 5,
     "name": "41.193.141.5",
     "ip": "(41.193.141.5)",
-    "latency": 7.118
+    "latency": 6.496
   },
   {
     "hop": 6,
-    "name": "41.175.242.212",
-    "ip": "(41.175.242.212)",
-    "latency": 2.528
+    "name": "41.193.12.180",
+    "ip": "(41.193.12.180)",
+    "latency": 1.685
   },
   {
     "hop": 7,
-    "name": "Hu0-0-0-14.LZA-P2-CPT.liquidtelecom.com",
-    "ip": "(5.11.13.175)",
-    "latency": 2.372
+    "name": "cloudflare.ixp.capetown",
+    "ip": "(196.60.70.198)",
+    "latency": 2.482
   },
   {
     "hop": 8,
-    "name": "hu-0-0-0-11.luk-p1-gsw.liquidtelecom.com",
-    "ip": "(41.175.246.193)",
-    "latency": 142.589
-  },
-  {
-    "hop": 9,
-    "name": "luk-p1-tcy.hu0-0-0-0.liquidtelecom.com",
-    "ip": "(5.11.12.143)",
-    "latency": 143.176
-  },
-  {
-    "hop": 10,
-    "name": "193.251.152.45",
-    "ip": "(193.251.152.45)",
-    "latency": 142.653
-  },
-  {
-    "hop": 11,
-    "name": "81.52.166.175",
-    "ip": "(81.52.166.175)",
-    "latency": 231.384
+    "name": "104.16.133.229",
+    "ip": "(104.16.133.229)",
+    "latency": 1.782
   }
 ]

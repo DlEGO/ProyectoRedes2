@@ -1,21 +1,6 @@
-traceroute to amazon.com (205.251.242.103), 20 hops max, 60 byte packets
- 1  77.90.35.1 (77.90.35.1)  14.659 ms  14.631 ms
- 2  b2-bdr.gslnetworks.com (103.137.13.4)  1.300 ms  1.286 ms
- 3  e29.syd-eqxsy5-bb1.globalsecurelayer.com (206.148.24.5)  1.295 ms  1.314 ms
- 4  e52.lax-csla2-bb1.globalsecurelayer.com (206.148.24.3)  134.088 ms  134.083 ms
- 5  e49.lax-csla2-bb1.globalsecurelayer.com (206.148.25.91)  134.186 ms  134.292 ms
- 6  e49.phx-pnap-bb1.globalsecurelayer.com (206.148.25.18)  141.598 ms  141.676 ms
- 7  e50.dal-eqxda11-bb1.globalsecurelayer.com (206.148.25.22)  165.030 ms  165.026 ms
- 8  ipv4.de-cix.dfw.us.as16507.amazon.com (206.53.202.34)  165.396 ms  165.392 ms
- 9  52.93.243.80 (52.93.243.80)  165.268 ms  165.264 ms
-10  * *
-11  52.93.34.149 (52.93.34.149)  164.634 ms  164.738 ms
-12  176.32.125.169 (176.32.125.169)  164.974 ms  164.954 ms
-13  * *
-14  * *
-15  * *
-16  * *
-17  * *
-18  * *
-19  * *
-20  * *
+traceroute to cloudflare.com (104.16.133.229), 20 hops max, 60 byte packets
+ 1  140.91.212.46 (140.91.212.46)  0.396 ms  0.110 ms
+ 2  140.204.22.90 (140.204.22.90)  1.213 ms  1.192 ms
+ 3  * *
+ 4  108.162.247.87 (108.162.247.87)  2.358 ms  2.335 ms
+ 5  104.16.133.229 (104.16.133.229)  1.553 ms  1.575 ms

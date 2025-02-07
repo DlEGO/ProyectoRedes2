@@ -1,0 +1,5 @@
+traceroute to cloudflare.com (104.16.132.229), 20 hops max, 60 byte packets
+ 1  ether3.mikrotik-bb-zeus.fratec.net (200.59.16.65)  0.698 ms  0.538 ms
+ 2  sfp-sfpplus1.mikrotik-bb-crix.fratec.net (200.59.17.42)  0.859 ms  0.829 ms
+ 3  200.107.83.144 (200.107.83.144)  1.832 ms  2.050 ms
+ 4  104.16.132.229 (104.16.132.229)  1.402 ms  1.390 ms

@@ -3,48 +3,30 @@
     "hop": 1,
     "name": "66.90.73.241",
     "ip": "(66.90.73.241)",
-    "latency": 0.824
+    "latency": 7.446
   },
   {
     "hop": 2,
     "name": "ae0.2504.edge1.eze2.as7195.net",
     "ip": "(200.25.50.197)",
-    "latency": 0.281
+    "latency": 0.3
   },
   {
     "hop": 3,
-    "name": "ae813.0.edge1.scl1.as7195.net",
-    "ip": "(200.25.75.35)",
-    "latency": 20.306
+    "name": "ae812.0.edge2.eze1.as7195.net",
+    "ip": "(200.25.51.56)",
+    "latency": 0.635
   },
   {
     "hop": 4,
-    "name": "ae7.0.edge1.lim1.as7195.net",
-    "ip": "(200.25.51.242)",
-    "latency": 49.395
+    "name": "45.68.8.181",
+    "ip": "(45.68.8.181)",
+    "latency": 1.337
   },
   {
     "hop": 5,
-    "name": "ae610.0.edge1.mia1.as7195.net",
-    "ip": "(200.25.75.24)",
-    "latency": 111.732
-  },
-  {
-    "hop": 6,
-    "name": "ae305.0.edge1.iad1.as7195.net",
-    "ip": "(200.25.51.141)",
-    "latency": 138.005
-  },
-  {
-    "hop": 7,
-    "name": "equinix02-iad2.amazon.com",
-    "ip": "(206.126.236.35)",
-    "latency": 138.571
-  },
-  {
-    "hop": 18,
-    "name": "s3-console-us-standard.console.aws.amazon.com",
-    "ip": "(205.251.242.103)",
-    "latency": 137.717
+    "name": "104.16.132.229",
+    "ip": "(104.16.132.229)",
+    "latency": 0.573
   }
 ]
