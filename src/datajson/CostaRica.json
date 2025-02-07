@@ -1,80 +1,68 @@
 [
   {
-    "hop": null,
-    "name": "to",
-    "ipv4": "google.com",
-    "latency": "(192.178.50.78), 20 hops max, 60 byte packets"
-  },
-  {
     "hop": 1,
     "name": "ether3.mikrotik-bb-zeus.fratec.net",
-    "ipv4": "(200.59.16.65)",
-    "latency": "0.487 ms 0.382 ms"
+    "ip": "(200.59.16.65)",
+    "latency": 0.57
   },
   {
     "hop": 2,
     "name": "sfp-sfpplus1.mikrotik-bb-router-gnd1.fratec.net",
-    "ipv4": "(200.59.17.43)",
-    "latency": "0.898 ms 0.893 ms"
+    "ip": "(200.59.17.43)",
+    "latency": 0.993
   },
   {
     "hop": 3,
     "name": "rev28telecablecr.com",
-    "ipv4": "(177.93.28.66)",
-    "latency": "1.299 ms 1.282 ms"
+    "ip": "(177.93.28.66)",
+    "latency": 1.505
   },
   {
     "hop": 4,
     "name": "172.31.3.9",
-    "ipv4": "(172.31.3.9)",
-    "latency": "1.957 ms 1.979 ms"
+    "ip": "(172.31.3.9)",
+    "latency": 2.002
   },
   {
     "hop": 5,
     "name": "172.31.1.53",
-    "ipv4": "(172.31.1.53)",
-    "latency": "2.142 ms 2.399 ms"
-  },
-  {
-    "hop": 6,
-    "name": "172.31.7.170",
-    "ipv4": "(172.31.7.170)",
-    "latency": "2.275 ms 2.308 ms"
+    "ip": "(172.31.1.53)",
+    "latency": 1.907
   },
   {
     "hop": 7,
     "name": "172.31.7.30",
-    "ipv4": "(172.31.7.30)",
-    "latency": "52.833 ms 53.037 ms"
+    "ip": "(172.31.7.30)",
+    "latency": 52.892
   },
   {
     "hop": 8,
     "name": "et-3-0-27.edge6.Miami1.Level3.net",
-    "ipv4": "(4.30.249.89)",
-    "latency": "53.076 ms 53.055 ms"
+    "ip": "(4.30.249.89)",
+    "latency": 53.304
   },
   {
     "hop": 10,
     "name": "142.250.161.140",
-    "ipv4": "(142.250.161.140)",
-    "latency": "52.351 ms 52.330 ms"
+    "ip": "(142.250.161.140)",
+    "latency": 52.929
   },
   {
     "hop": 11,
     "name": "142.251.77.73",
-    "ipv4": "(142.251.77.73)",
-    "latency": "53.237 ms 53.314 ms"
+    "ip": "(142.251.77.73)",
+    "latency": 53.729
   },
   {
     "hop": 12,
     "name": "142.250.224.251",
-    "ipv4": "(142.250.224.251)",
-    "latency": "87.017 ms 86.966 ms"
+    "ip": "(142.250.224.251)",
+    "latency": 52.578
   },
   {
     "hop": 13,
     "name": "tzmiaa-ad-in-f14.1e100.net",
-    "ipv4": "(192.178.50.78)",
-    "latency": "86.313 ms 86.285 ms"
+    "ip": "(192.178.50.78)",
+    "latency": 52.596
   }
 ]

@@ -1,14 +1,41 @@
 import axios from 'axios';
-import type { GeoLocation, TraceServer, TraceResult } from '../types';
-import * as fs from 'fs';
-import * as path from 'path';
+import type { GeoLocation, TraceServer, TraceResult, TraceHop } from '../types';
+
+import newYorkTraceData from '../datajson/NewYork.json'; 
+import BarcelonaTraceData from '../datajson/Barcelona.json'; 
+import MadridTraceData from '../datajson/Madrid.json'; 
+import BuenosAiresTraceData from '../datajson/BuenosAires.json'; 
+import CapeTownTraceData from '../datajson/CapeTown.json';
+import IpatingaTraceData from '../datajson/Ipatinga.json';
+import JohannesburgTraceData from '../datajson/Johannesburg.json';
+import MelbourneTraceData from '../datajson/Melbourne.json';
+import PanamaCityTraceData from '../datajson/Panama.json';
+import SanJoseTraceData from '../datajson/SanJose.json';
+import SydneyTraceData from '../datajson/Sydney.json';
+import CostaRicaTraceData from '../datajson/CostaRica.json';
+
+
+const NEWYORK_TRACE_DATA: TraceHop[] = newYorkTraceData;
+const BARCELONA_TRACE_DATA: TraceHop[] = BarcelonaTraceData;
+const MADRID_TRACE_DATA: TraceHop[] = MadridTraceData;
+const BUENOSAIRES_TRACE_DATA: TraceHop[] = BuenosAiresTraceData;
+const CAPETOWN_TRACE_DATA: TraceHop[] = CapeTownTraceData;
+const IPATINGA_TRACE_DATA: TraceHop[] = IpatingaTraceData;
+const JOHANNESBURG_TRACE_DATA: TraceHop[] = JohannesburgTraceData;
+const MELBOURNE_TRACE_DATA: TraceHop[] = MelbourneTraceData;
+const PANAMACITY_TRACE_DATA: TraceHop[] = PanamaCityTraceData;
+const SANJOSE_TRACE_DATA: TraceHop[] = SanJoseTraceData;
+const SYDNEY_TRACE_DATA: TraceHop[] = SydneyTraceData;
+const COSTARICA_TRACE_DATA: TraceHop[] = CostaRicaTraceData;
+
+console.log(NEWYORK_TRACE_DATA); // Puedes ver los datos aquí
 
 const IP_API_BASE = 'http://ip-api.com/json';
 
 
 
 // Virginia trace data from real measurements
-const NEWYORK_TRACE_DATA = [
+const NEWYORK_TRACE_DATA_OLD = [
   { hop: 1, ip: '208.91.105.1', name: '_gateway', latency: 0.294 },
   { hop: 2, ip: '100.103.63.1', name: '', latency: 0.264 },
   { hop: 3, ip: '100.103.10.6', name: '', latency: 0.865 },
@@ -25,6 +52,8 @@ const NEWYORK_TRACE_DATA = [
   { hop: 15, ip: '216.239.62.193', name: '', latency: 14.104 }
 ];
 
+console.log(NEWYORK_TRACE_DATA_OLD);
+
 export const TRACE_SERVERS: TraceServer[] = [
   // North America
   {
@@ -40,7 +69,8 @@ export const TRACE_SERVERS: TraceServer[] = [
     name: 'US West (San Jose, CA)',
     location: 'San Jose, CA',
     country: 'United States',
-    latencyOffset: 30
+    latencyOffset: 30,
+    realData: SANJOSE_TRACE_DATA
   },
   // Central America
   {
@@ -48,14 +78,16 @@ export const TRACE_SERVERS: TraceServer[] = [
     name: 'Costa Rica (San José)',
     location: 'San José',
     country: 'Costa Rica',
-    latencyOffset: 80
+    latencyOffset: 80,
+    realData: COSTARICA_TRACE_DATA
   },
   {
     id: 'pa-pty',
     name: 'Panama (Panama City)',
     location: 'Panama City',
     country: 'Panama',
-    latencyOffset: 90
+    latencyOffset: 90,
+    realData: PANAMACITY_TRACE_DATA
   },
   // South America
   {
@@ -63,14 +95,16 @@ export const TRACE_SERVERS: TraceServer[] = [
     name: 'Brazil (Ipatinga)',
     location: 'Ipatinga',
     country: 'Brazil',
-    latencyOffset: 100
+    latencyOffset: 100,
+    realData: IPATINGA_TRACE_DATA
   },
   {
     id: 'ar-bue',
     name: 'Argentina (Buenos Aires)',
     location: 'Buenos Aires',
     country: 'Argentina',
-    latencyOffset: 120
+    latencyOffset: 120,
+    realData: BUENOSAIRES_TRACE_DATA
   },
   // Europe
   {
@@ -78,14 +112,16 @@ export const TRACE_SERVERS: TraceServer[] = [
     name: 'Spain (Madrid)',
     location: 'Madrid',
     country: 'Spain',
-    latencyOffset: 150
+    latencyOffset: 150,
+    realData: MADRID_TRACE_DATA
   },
   {
     id: 'es-vlc',
-    name: 'Spain (Valencia)',
-    location: 'Valencia',
+    name: 'Spain (Barcelona)',
+    location: 'Barcelona',
     country: 'Spain',
-    latencyOffset: 160
+    latencyOffset: 160,
+    realData: BARCELONA_TRACE_DATA
   },
   // Oceania
   {
@@ -93,14 +129,16 @@ export const TRACE_SERVERS: TraceServer[] = [
     name: 'Australia (Melbourne)',
     location: 'Melbourne',
     country: 'Australia',
-    latencyOffset: 200
+    latencyOffset: 200,
+    realData: MELBOURNE_TRACE_DATA
   },
   {
     id: 'au-syd',
     name: 'Australia (Sydney)',
     location: 'Sydney',
     country: 'Australia',
-    latencyOffset: 180
+    latencyOffset: 180,
+    realData: SYDNEY_TRACE_DATA
   },
   // Africa
   {
@@ -108,14 +146,16 @@ export const TRACE_SERVERS: TraceServer[] = [
     name: 'South Africa (Johannesburg)',
     location: 'Johannesburg',
     country: 'South Africa',
-    latencyOffset: 220
+    latencyOffset: 220,
+    realData: JOHANNESBURG_TRACE_DATA
   },
   {
     id: 'za-cpt',
     name: 'South Africa (Cape Town)',
     location: 'Cape Town',
     country: 'South Africa',
-    latencyOffset: 240
+    latencyOffset: 240,
+    realData: CAPETOWN_TRACE_DATA
   }
 ];
 

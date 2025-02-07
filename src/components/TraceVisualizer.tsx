@@ -93,7 +93,7 @@ export function TraceVisualizer({ data }: Props) {
       .attr('stroke', '#ffffff')
       .attr('stroke-width', 2)
       .append('title')
-      .text(d => `Hop ${d.hop}\nIP: ${d.ip}\nLatency: ${d.latency.toFixed(2)}ms\nLocation: ${d.location}`);
+      .text(d => `Hop ${d.hop}\nIP: ${d.ip}\nLatency: ${d.latency}ms\nLocation: ${d.location}`);
 
     // Add axes
     svg.append('g')

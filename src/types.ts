@@ -13,7 +13,7 @@ export interface GeoLocation {
   country: string;
 }
 
-interface TraceHop {
+export interface TraceHop {
   hop: number;
   ip: string;
   name: string;

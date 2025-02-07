@@ -32,16 +32,23 @@ const locations = [
 // Función para convertir la salida del traceroute a JSON
 const parseTraceroute = (data) => {
   const lines = data.split('\n').filter(line => line.trim());
+  const linesToProcess = lines.length > 0 ? lines.slice(1) : [];
   const result = [];
 
-  for (const line of lines) {
+  for (const line of linesToProcess) {
     const parts = line.trim().split(/\s+/);
     if (parts.length >= 4) {
+      const latencyParts = parts.slice(3);
+      const latencyStr = latencyParts.length > 0 ? latencyParts[0] : null;
+
+      // Intenta convertir a número, si falla usa null
+      const latency = latencyStr ? parseFloat(latencyStr.replace(/ ms/g, '')) : null;
+
       result.push({
         hop: parseInt(parts[0], 10),
         name: parts[1] || null,
-        ipv4: parts[2] || null,
-        latency: parts.slice(3).join(' ') || null
+        ip: parts[2] || null,
+        latency: latency // Almacenar el valor numérico de latencia o null
       });
     }
   }

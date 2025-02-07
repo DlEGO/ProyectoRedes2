@@ -30,31 +30,38 @@ function App() {
     if (!target) return;
 
     setLoading(true);
+
     try {
-      const response = await fetch('http://localhost:5000/trace', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ target })
-      });
+        const response = await fetch('http://localhost:5000/trace', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ target })
+        });
 
-      if (!response.ok) {
-        throw new Error('Server response was not ok');
-      }
+        if (!response.ok) {
+            throw new Error('Server response was not ok');
+        }
 
-      const result = await response.json();
-      console.log(result);
-      alert('Trace started. Check the server for results.');
+        const result = await response.json();
+        console.log(result);
+        alert('Trace started. Check the server for results.');
+
+        // Simular el trace después de que el servidor responde (sin verificación de archivos)
+        const results = await Promise.all(TRACE_SERVERS.map(server => simulateTraceFromServer(target, server)));
+        console.log(results);
+        setTraceResults(results);
+
     } catch (error) {
-      console.error('Error during trace:', error);
-      console.log('Falling back to simulation...');
+        console.error('Error during trace:', error);
+        // Si hay un error, podrías considerar ejecutar la simulación como fallback.
+        // const results = await Promise.all(TRACE_SERVERS.map(server => simulateTraceFromServer(target, server)));
+        // console.log(results);
+        // setTraceResults(results);
 
-      const results = await Promise.all(TRACE_SERVERS.map(server => simulateTraceFromServer(target, server)));
-      console.log(results);
-      setTraceResults(results);
     } finally {
-      setLoading(false);
+        setLoading(false);
     }
-  };
+};
 
   const exportData = () => {
     if (!traceResults.length) return;
