@@ -1,44 +1,50 @@
 [
   {
     "hop": 1,
-    "name": "192.168.1.1",
-    "ip": "(192.168.1.1)",
-    "latency": 0.848
+    "name": "66.90.73.241",
+    "ip": "(66.90.73.241)",
+    "latency": 0.824
   },
   {
     "hop": 2,
-    "name": "host147.181-88-78.telecom.net.ar",
-    "ip": "(181.88.78.147)",
-    "latency": 4.28
+    "name": "ae0.2504.edge1.eze2.as7195.net",
+    "ip": "(200.25.50.197)",
+    "latency": 0.281
+  },
+  {
+    "hop": 3,
+    "name": "ae813.0.edge1.scl1.as7195.net",
+    "ip": "(200.25.75.35)",
+    "latency": 20.306
+  },
+  {
+    "hop": 4,
+    "name": "ae7.0.edge1.lim1.as7195.net",
+    "ip": "(200.25.51.242)",
+    "latency": 49.395
   },
   {
     "hop": 5,
-    "name": "host234.181-96-113.telecom.net.ar",
-    "ip": "(181.96.113.234)",
-    "latency": 5.181
+    "name": "ae610.0.edge1.mia1.as7195.net",
+    "ip": "(200.25.75.24)",
+    "latency": 111.732
   },
   {
     "hop": 6,
-    "name": "72.14.194.198",
-    "ip": "(72.14.194.198)",
-    "latency": 4.987
+    "name": "ae305.0.edge1.iad1.as7195.net",
+    "ip": "(200.25.51.141)",
+    "latency": 138.005
   },
   {
     "hop": 7,
-    "name": "192.178.80.111",
-    "ip": "(192.178.80.111)",
-    "latency": 6.979
+    "name": "equinix02-iad2.amazon.com",
+    "ip": "(206.126.236.35)",
+    "latency": 138.571
   },
   {
-    "hop": 8,
-    "name": "142.251.79.143",
-    "ip": "(142.251.79.143)",
-    "latency": 7.807
-  },
-  {
-    "hop": 9,
-    "name": "gru10s13-in-f14.1e100.net",
-    "ip": "(216.58.202.110)",
-    "latency": 7.65
+    "hop": 18,
+    "name": "s3-console-us-standard.console.aws.amazon.com",
+    "ip": "(205.251.242.103)",
+    "latency": 137.717
   }
 ]

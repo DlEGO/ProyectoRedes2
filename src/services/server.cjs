@@ -15,7 +15,7 @@ app.use(express.json());
 const locations = [
   { name: 'NewYork', location: 'verizon+new york' },
   { name: 'SanJose', location: 'san jose' },
-  { name: 'CostaRica', location: 'Costa Rica' },
+  // { name: 'CostaRica', location: 'Costa Rica' },
   { name: 'Panama', location: 'panama city' },
   { name: 'Ipatinga', location: 'ipatinga' },
   { name: 'BuenosAires', location: 'Buenos Aires' },

@@ -53,10 +53,10 @@ function App() {
 
     } catch (error) {
         console.error('Error during trace:', error);
-        // Si hay un error, podrías considerar ejecutar la simulación como fallback.
-        // const results = await Promise.all(TRACE_SERVERS.map(server => simulateTraceFromServer(target, server)));
-        // console.log(results);
-        // setTraceResults(results);
+        
+        const results = await Promise.all(TRACE_SERVERS.map(server => simulateTraceFromServer(target, server)));
+        console.log(results);
+        setTraceResults(results);
 
     } finally {
         setLoading(false);

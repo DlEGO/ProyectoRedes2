@@ -17,7 +17,7 @@ export interface TraceHop {
   hop: number;
   ip: string;
   name: string;
-  latency: number;
+  latency: number | null;
 }
 
 export interface TraceServer {

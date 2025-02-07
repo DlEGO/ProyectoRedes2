@@ -1,9 +1,21 @@
-traceroute to google.com (142.250.204.14), 20 hops max, 60 byte packets
- 1  172.17.0.1 (172.17.0.1)  0.060 ms  0.013 ms
- 2  172.25.0.0 (172.25.0.0)  0.042 ms  0.039 ms
- 3  77.90.35.1 (77.90.35.1)  27.293 ms  27.259 ms
- 4  b2-bdr.gslnetworks.com (103.137.13.4)  0.861 ms  0.850 ms
- 5  72.14.215.68 (72.14.215.68)  0.990 ms  0.982 ms
- 6  192.178.97.133 (192.178.97.133)  2.178 ms  2.176 ms
- 7  142.251.64.177 (142.251.64.177)  1.389 ms  1.384 ms
- 8  syd09s25-in-f14.1e100.net (142.250.204.14)  1.068 ms  1.058 ms
+traceroute to amazon.com (205.251.242.103), 20 hops max, 60 byte packets
+ 1  77.90.35.1 (77.90.35.1)  14.659 ms  14.631 ms
+ 2  b2-bdr.gslnetworks.com (103.137.13.4)  1.300 ms  1.286 ms
+ 3  e29.syd-eqxsy5-bb1.globalsecurelayer.com (206.148.24.5)  1.295 ms  1.314 ms
+ 4  e52.lax-csla2-bb1.globalsecurelayer.com (206.148.24.3)  134.088 ms  134.083 ms
+ 5  e49.lax-csla2-bb1.globalsecurelayer.com (206.148.25.91)  134.186 ms  134.292 ms
+ 6  e49.phx-pnap-bb1.globalsecurelayer.com (206.148.25.18)  141.598 ms  141.676 ms
+ 7  e50.dal-eqxda11-bb1.globalsecurelayer.com (206.148.25.22)  165.030 ms  165.026 ms
+ 8  ipv4.de-cix.dfw.us.as16507.amazon.com (206.53.202.34)  165.396 ms  165.392 ms
+ 9  52.93.243.80 (52.93.243.80)  165.268 ms  165.264 ms
+10  * *
+11  52.93.34.149 (52.93.34.149)  164.634 ms  164.738 ms
+12  176.32.125.169 (176.32.125.169)  164.974 ms  164.954 ms
+13  * *
+14  * *
+15  * *
+16  * *
+17  * *
+18  * *
+19  * *
+20  * *

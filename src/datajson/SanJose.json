@@ -1,50 +1,62 @@
 [
   {
     "hop": 1,
-    "name": "83.147.241.1",
-    "ip": "(83.147.241.1)",
-    "latency": 1.752
+    "name": "193.109.187.6",
+    "ip": "(193.109.187.6)",
+    "latency": 0.299
   },
   {
     "hop": 2,
-    "name": "12.49.172.66.customer.evocative.com",
-    "ip": "(66.172.49.12)",
-    "latency": 0.329
+    "name": "xe-1-1-12-1.a00.snfcca07.us.bb.gin.ntt.net",
+    "ip": "(128.241.10.170)",
+    "latency": 0.291
+  },
+  {
+    "hop": 3,
+    "name": "ae-11.r27.snjsca04.us.bb.gin.ntt.net",
+    "ip": "(129.250.4.98)",
+    "latency": 2.443
   },
   {
     "hop": 4,
-    "name": "10.0.248.128",
-    "ip": "(10.0.248.128)",
-    "latency": 1.302
+    "name": "ae-8.r23.dllstx14.us.bb.gin.ntt.net",
+    "ip": "(129.250.4.155)",
+    "latency": 48.799
   },
   {
     "hop": 5,
-    "name": "sjo-b23-link.ip.twelve99.net",
-    "ip": "(62.115.192.24)",
-    "latency": 1.247
+    "name": "ae-31.a00.dllstx14.us.bb.gin.ntt.net",
+    "ip": "(129.250.3.59)",
+    "latency": 48.872
   },
   {
     "hop": 6,
-    "name": "google-ic-382739.ip.twelve99-cust.net",
-    "ip": "(213.248.101.235)",
-    "latency": 1.306
+    "name": "ae-2.amazon.dllstx14.us.bb.gin.ntt.net",
+    "ip": "(129.250.201.10)",
+    "latency": 49.735
   },
   {
     "hop": 7,
-    "name": "142.251.67.13",
-    "ip": "(142.251.67.13)",
-    "latency": 1.421
-  },
-  {
-    "hop": 8,
-    "name": "142.251.241.103",
-    "ip": "(142.251.241.103)",
-    "latency": 1.321
+    "name": "54.239.105.105",
+    "ip": "(54.239.105.105)",
+    "latency": 193.937
   },
   {
     "hop": 9,
-    "name": "sfo03s32-in-f14.1e100.net",
-    "ip": "(142.251.214.142)",
-    "latency": 1.37
+    "name": "52.93.34.151",
+    "ip": "(52.93.34.151)",
+    "latency": 197.38
+  },
+  {
+    "hop": 10,
+    "name": "15.230.48.38",
+    "ip": "(15.230.48.38)",
+    "latency": 195.608
+  },
+  {
+    "hop": 20,
+    "name": "52.94.236.248",
+    "ip": "(52.94.236.248)",
+    "latency": 195.37
   }
 ]

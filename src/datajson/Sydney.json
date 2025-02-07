@@ -1,50 +1,68 @@
 [
   {
     "hop": 1,
-    "name": "172.17.0.1",
-    "ip": "(172.17.0.1)",
-    "latency": 0.06
+    "name": "77.90.35.1",
+    "ip": "(77.90.35.1)",
+    "latency": 14.659
   },
   {
     "hop": 2,
-    "name": "172.25.0.0",
-    "ip": "(172.25.0.0)",
-    "latency": 0.042
+    "name": "b2-bdr.gslnetworks.com",
+    "ip": "(103.137.13.4)",
+    "latency": 1.3
   },
   {
     "hop": 3,
-    "name": "77.90.35.1",
-    "ip": "(77.90.35.1)",
-    "latency": 27.293
+    "name": "e29.syd-eqxsy5-bb1.globalsecurelayer.com",
+    "ip": "(206.148.24.5)",
+    "latency": 1.295
   },
   {
     "hop": 4,
-    "name": "b2-bdr.gslnetworks.com",
-    "ip": "(103.137.13.4)",
-    "latency": 0.861
+    "name": "e52.lax-csla2-bb1.globalsecurelayer.com",
+    "ip": "(206.148.24.3)",
+    "latency": 134.088
   },
   {
     "hop": 5,
-    "name": "72.14.215.68",
-    "ip": "(72.14.215.68)",
-    "latency": 0.99
+    "name": "e49.lax-csla2-bb1.globalsecurelayer.com",
+    "ip": "(206.148.25.91)",
+    "latency": 134.186
   },
   {
     "hop": 6,
-    "name": "192.178.97.133",
-    "ip": "(192.178.97.133)",
-    "latency": 2.178
+    "name": "e49.phx-pnap-bb1.globalsecurelayer.com",
+    "ip": "(206.148.25.18)",
+    "latency": 141.598
   },
   {
     "hop": 7,
-    "name": "142.251.64.177",
-    "ip": "(142.251.64.177)",
-    "latency": 1.389
+    "name": "e50.dal-eqxda11-bb1.globalsecurelayer.com",
+    "ip": "(206.148.25.22)",
+    "latency": 165.03
   },
   {
     "hop": 8,
-    "name": "syd09s25-in-f14.1e100.net",
-    "ip": "(142.250.204.14)",
-    "latency": 1.068
+    "name": "ipv4.de-cix.dfw.us.as16507.amazon.com",
+    "ip": "(206.53.202.34)",
+    "latency": 165.396
+  },
+  {
+    "hop": 9,
+    "name": "52.93.243.80",
+    "ip": "(52.93.243.80)",
+    "latency": 165.268
+  },
+  {
+    "hop": 11,
+    "name": "52.93.34.149",
+    "ip": "(52.93.34.149)",
+    "latency": 164.634
+  },
+  {
+    "hop": 12,
+    "name": "176.32.125.169",
+    "ip": "(176.32.125.169)",
+    "latency": 164.974
   }
 ]
