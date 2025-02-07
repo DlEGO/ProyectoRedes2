@@ -31,12 +31,26 @@ function App() {
 
     setLoading(true);
     try {
-      const results = await Promise.all(
-        TRACE_SERVERS.map(server => simulateTraceFromServer(target, server))
-      );
-      setTraceResults(results);
+      const response = await fetch('http://localhost:5000/trace', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ target })
+      });
+
+      if (!response.ok) {
+        throw new Error('Server response was not ok');
+      }
+
+      const result = await response.json();
+      console.log(result);
+      alert('Trace started. Check the server for results.');
     } catch (error) {
       console.error('Error during trace:', error);
+      console.log('Falling back to simulation...');
+
+      const results = await Promise.all(TRACE_SERVERS.map(server => simulateTraceFromServer(target, server)));
+      console.log(results);
+      setTraceResults(results);
     } finally {
       setLoading(false);
     }
@@ -231,3 +245,7 @@ function App() {
 }
 
 export default App;
+
+function loadTraceData() {
+  throw new Error('Function not implemented.');
+}

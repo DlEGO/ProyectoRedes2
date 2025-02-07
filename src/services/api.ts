@@ -1,7 +1,11 @@
 import axios from 'axios';
 import type { GeoLocation, TraceServer, TraceResult } from '../types';
+import * as fs from 'fs';
+import * as path from 'path';
 
 const IP_API_BASE = 'http://ip-api.com/json';
+
+
 
 // Virginia trace data from real measurements
 const NEWYORK_TRACE_DATA = [
